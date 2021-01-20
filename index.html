@@ -10,6 +10,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
       <nav class="navigation">
         <a class="nav-logo" href="./"><span class="header-logo">Web</span>Studio</a>
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fair">Студия</span></a></li>
+          <li class="nav-item inline"><a class="nav-link" href="./index.html"><span class="fair">Студия</span></a></li>
           <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
           <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
         </ul>
@@ -39,7 +40,7 @@
     <section class="main-header font-header">
         <div class="hero-content">
           <h1 class="title-hero">эффективные решения<br>для вашего бизнеса</h1>
-          <button type="button" class="main-button">Заказать услугу</button>
+          <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
 
@@ -79,14 +80,29 @@
       <div class="container">
         <h2 class="section-header">Чем мы занимаемся</h2>
         <ul class="work-list">
-          <li>
+          <li class="work-item">
             <img src="./images/img.jpg" alt="write html" width="370" height="294">
+            <div class="type-work">
+              <p class="type-work-name">
+                Десктопные приложения
+              </p>
+            </div>
           </li>
-          <li>
+          <li class="work-item">
             <img src="./images/img(1).jpg" alt="agree decign" width="370" height="294">
+            <div class="type-work">
+              <p class="type-work-name">
+                Мобильные приложения
+              </p>
+            </div>
           </li>
-          <li>
+          <li class="work-item">
             <img src="./images/img(2).jpg" alt="apply css" width="370" height="294">
+            <div class="type-work">
+              <p class="type-work-name">
+                Дизайнерские решения
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -207,6 +223,15 @@
       </div>
     </div>
   </footer>
+
+  <!--Модальное окно-->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-button" data-modal-close>&#10006;</button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
