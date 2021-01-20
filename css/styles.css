@@ -557,7 +557,7 @@ footer{
     width: 100%;
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
-    padding: 30px 20px;
+    padding: 63px 24px;
     font-size: 14px;
     font-weight: 600;
     opacity: 0;
@@ -565,6 +565,14 @@ footer{
     transform: translateY(100%);
 }
 
+.description-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
 
 .main-port-link:hover .description-content,
 .main-port-link:focus .description-content {
@@ -589,6 +597,8 @@ footer{
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    
+    color: var(--title-text-color);
 }
 
 .portfolio-text{
