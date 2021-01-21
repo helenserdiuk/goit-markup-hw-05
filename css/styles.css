@@ -140,14 +140,16 @@ p{
     color: var(--link-text-color);
     fill: var(--link-text-color);
 }
-
+.inline-wrap{
+    display: flex;
+    align-items: flex-end;
+}
 .inline::after{
     display: inline-block;
     content: "";
-    width: 48px;
     height: 4px;
+    width: 100%;
     background-color: var(--link-text-color);
-    margin-left: 25px;
     margin-top: 28px;
     border-radius: 2px;
 }
